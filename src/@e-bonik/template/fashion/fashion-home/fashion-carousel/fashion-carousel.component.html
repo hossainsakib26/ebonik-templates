@@ -1,9 +1,43 @@
 <div class="container">
-  <div>Some tags before</div>
-  <owl-carousel-o [options]="customOptions">
-    <ng-template carouselSlide>Slide 1</ng-template>
-    <ng-template carouselSlide>Slide 2</ng-template>
-    <ng-template carouselSlide>Slide 3</ng-template>
-  </owl-carousel-o>
-  <div>Some tags after</div>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <!--        <img src="assets/carouse/image1.jpg" class="img-fluid h-25 w-100" alt="Random first slide">-->
+        <img src="assets/carouse/image1.jpg" height="450px" width="100%" alt="Random first slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <!--        <img src="assets/carouse/image3.jpg" class="img-fluid h-25 w-100" alt="Random second slide">-->
+        <img src="assets/carouse/image3.jpg" height="450px" width="100%" alt="Random second slide">
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <!--        <img src="assets/carouse/image2.jpg" class="img-fluid h-25 w-100" alt="Random third slide">-->
+        <img src="assets/carouse/image2.jpg" height="450px" width="100%" alt="Random third slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
 </div>
+
+<!--<div class="container">-->
+<!--  <ngb-carousel>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img src="assets/carouse/image1.jpg" height="450px" width="100%" alt="Angular Carousel 1">-->
+<!--      </div>-->
+
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img src="assets/carouse/image2.jpg" height="450px" width="100%" alt="Angular Carousel 2">-->
+<!--      </div>-->
+<!--    </ng-template>-->
+<!--    <ng-template ngbSlide>-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img src="assets/carouse/image3.jpg" height="450px" width="100%" alt="Angular Carousel 3">-->
+<!--      </div>-->
+<!--    </ng-template>-->
+<!--  </ngb-carousel>-->
+<!--</div>-->

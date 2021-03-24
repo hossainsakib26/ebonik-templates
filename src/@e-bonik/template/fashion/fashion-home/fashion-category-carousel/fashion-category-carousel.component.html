@@ -1,5 +1,45 @@
-<div class="container gy-4">
-  <div class="d-flex justify-content-center pb-4">
-    <h3>Most Viewed Categories</h3>
+<div class="container pt-4 pb-4">
+
+  <h3 class="d-flex justify-content-center pb-4">Most Viewed Categories</h3>
+
+  <div class="d-flex">
+    <div class="col-10 offset-1">
+
+<!--      <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" (change)="getChangeData($event)" (changed)="getChangedData($event)" #owlCar>-->
+<!--        <ng-container *ngFor="let item of images">-->
+<!--          <ng-template carouselSlide [id]="item.id" [width]="item.width">-->
+<!--            <div class="mx-2">-->
+<!--              <img [src]="item.imgSrc" width="350px" height="375px" alt="Img Src">-->
+<!--            </div>-->
+<!--          </ng-template>-->
+<!--        </ng-container>-->
+<!--      </owl-carousel-o>-->
+
+      <owl-carousel-o [options]="customOptions" #owlCat>
+        <ng-container *ngFor="let image of images">
+          <ng-template carouselSlide  [width]="image.width">
+            <div class="p-3">
+<!--              <img [src]="image.imgSrc" class="" height="350" width="200" [alt]="image.imgAlt" [title]="image.title">-->
+
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img [src]="image.imgSrc" height="350" width="200" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Category title</h5>
+                </div>
+              </div>
+
+
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+    </div>
   </div>
+
 </div>

@@ -1,12 +1,17 @@
 import {Component, OnInit} from '@angular/core';
-import {OwlOptions} from 'ngx-owl-carousel-o';
+import {OwlOptions, SlidesOutputData} from 'ngx-owl-carousel-o';
+import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-fashion-carousel',
   templateUrl: './fashion-carousel.component.html',
-  styleUrls: ['./fashion-carousel.component.scss']
+  styleUrls: ['./fashion-carousel.component.scss'],
 })
 export class FashionCarouselComponent implements OnInit {
+  // @ts-ignore
+  activeSlides: SlidesOutputData;
+
+  slidesStore: any[] = [];
 
   customOptions: OwlOptions = {
     loop: true,
@@ -32,11 +37,18 @@ export class FashionCarouselComponent implements OnInit {
     },
     nav: true
   };
-
-  constructor() {
+  public isAnimationActive = false;
+  constructor(ngbConfig: NgbConfig) {
+    this.isAnimationActive = ngbConfig.animation = true;
   }
 
   ngOnInit(): void {
   }
+
+  getPassedData(data: SlidesOutputData): void {
+    this.activeSlides = data;
+    console.log(this.activeSlides);
+  }
+
 
 }
