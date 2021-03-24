@@ -8,6 +8,7 @@ import {FashionTopbarComponent} from './fashion-topbar/fashion-topbar.component'
 import {FashionNavComponent} from './fashion-nav/fashion-nav.component';
 import {FashionCategoryCarouselComponent} from './fashion-category-carousel/fashion-category-carousel.component';
 import {FashionCarouselComponent} from './fashion-carousel/fashion-carousel.component';
+import {CarouselModule} from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -20,8 +21,9 @@ import {FashionCarouselComponent} from './fashion-carousel/fashion-carousel.comp
     FashionCarouselComponent],
   imports: [
     CommonModule,
-    FashionHomeRoutingModule
-  ]
+    FashionHomeRoutingModule,
+    CarouselModule,
+  ],
 })
 export class FashionHomeModule {
 }
