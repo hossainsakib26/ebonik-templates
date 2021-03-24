@@ -1,0 +1,16 @@
+<div class="container">
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <ul class="navbar-nav align-items-center" *ngFor="let navObj of navigationMenu">
+          <li class="nav-item">
+            <a class="nav-link fs-5 change-animation mx-4" aria-current="page"
+               [routerLink]="navObj.link">{{navObj.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</div>
