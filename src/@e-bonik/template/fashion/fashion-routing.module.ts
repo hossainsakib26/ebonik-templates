@@ -7,7 +7,7 @@ const routes: Routes = [
   // {path: '', component: HomeComponent}
   {
     path: '', loadChildren: () => import('../fashion/fashion-home/fashion-home.module').then(m => m.FashionHomeModule),
-    resolve: {path: FashionHomeResolver}
+    // resolve: {path: FashionHomeResolver}
   }
 ];
 

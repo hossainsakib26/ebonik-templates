@@ -1,0 +1,13 @@
+<div class="container pb-5">
+  <h3 class="d-flex justify-content-center pb-3">Festive Collection</h3>
+
+  <div class="row">
+      <img src="assets/festimages/fest2.jpg" height="650" width="100%" alt="fest image" title="boisakh fest">
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 pt-1" *ngFor="let item of images">
+        <img [src]="item.imgSrc" [title]="item.title" [alt]="item.imgAlt" class="img-thumbnail">
+      </div>
+  </div>
+
+</div>

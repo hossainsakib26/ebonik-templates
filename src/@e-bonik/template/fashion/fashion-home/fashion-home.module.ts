@@ -9,17 +9,29 @@ import {FashionNavComponent} from './fashion-nav/fashion-nav.component';
 import {FashionCategoryCarouselComponent} from './fashion-category-carousel/fashion-category-carousel.component';
 import {FashionCarouselComponent} from './fashion-carousel/fashion-carousel.component';
 import {CarouselModule} from 'ngx-owl-carousel-o';
-import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbCarouselModule,
+  NgbModule
+} from '@ng-bootstrap/ng-bootstrap';
+import {NewArrivalsComponent} from './new-arrivals/new-arrivals.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {TopCollectionComponent} from './top-collection/top-collection.component';
+import {FastiveCollectionComponent} from './fastive-collection/fastive-collection.component';
+import {VideoGalarySectionComponent} from './video-galary-section/video-galary-section.component';
+import {GlobalCardModule} from '../../../common-ui/global-card/global-card.module';
+import {GlobalCarouselModule} from '../../../common-ui/global-carousel/global-carousel.module';
 
 
 @NgModule({
   imports: [
     CommonModule,
     FashionHomeRoutingModule,
-    // CarouselModule,
     NgbCarouselModule,
     NgbModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule,
+    GlobalCardModule,
+    GlobalCarouselModule
   ],
   declarations: [
     HomeComponent,
@@ -27,7 +39,11 @@ import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FashionTopbarComponent,
     FashionNavComponent,
     FashionCategoryCarouselComponent,
-    FashionCarouselComponent],
+    FashionCarouselComponent,
+    NewArrivalsComponent,
+    TopCollectionComponent,
+    FastiveCollectionComponent,
+    VideoGalarySectionComponent],
   bootstrap: [FashionCarouselComponent],
   exports: [FashionCarouselComponent],
 })

@@ -5,39 +5,41 @@
   <div class="d-flex">
     <div class="col-10 offset-1">
 
-<!--      <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" (change)="getChangeData($event)" (changed)="getChangedData($event)" #owlCar>-->
-<!--        <ng-container *ngFor="let item of images">-->
-<!--          <ng-template carouselSlide [id]="item.id" [width]="item.width">-->
-<!--            <div class="mx-2">-->
-<!--              <img [src]="item.imgSrc" width="350px" height="375px" alt="Img Src">-->
-<!--            </div>-->
-<!--          </ng-template>-->
-<!--        </ng-container>-->
-<!--      </owl-carousel-o>-->
+      <!--      <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" (change)="getChangeData($event)" (changed)="getChangedData($event)" #owlCar>-->
+      <!--        <ng-container *ngFor="let item of images">-->
+      <!--          <ng-template carouselSlide [id]="item.id" [width]="item.width">-->
+      <!--            <div class="mx-2">-->
+      <!--              <img [src]="item.imgSrc" width="350px" height="375px" alt="Img Src">-->
+      <!--            </div>-->
+      <!--          </ng-template>-->
+      <!--        </ng-container>-->
+      <!--      </owl-carousel-o>-->
 
-      <owl-carousel-o [options]="customOptions" #owlCat>
-        <ng-container *ngFor="let image of images">
-          <ng-template carouselSlide  [width]="image.width">
-            <div class="p-3">
-<!--              <img [src]="image.imgSrc" class="" height="350" width="200" [alt]="image.imgAlt" [title]="image.title">-->
+      <!--      <owl-carousel-o [options]="customOptions" #owlCat>-->
+      <!--        <ng-container *ngFor="let image of categories">-->
+      <!--          <ng-template carouselSlide>-->
+      <!--            <div class="p-3">-->
+      <!--              <img [src]="image.imageUrl" class="" height="350" width="200">-->
 
-              <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                  <img [src]="image.imgSrc" height="350" width="200" />
-                  <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Category title</h5>
-                </div>
-              </div>
+      <!--              &lt;!&ndash;              <div class="card">&ndash;&gt;-->
+      <!--              &lt;!&ndash;                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">&ndash;&gt;-->
+      <!--              &lt;!&ndash;                  <img [src]="image.imgSrc" height="350" width="200" />&ndash;&gt;-->
+      <!--              &lt;!&ndash;                  <a href="#!">&ndash;&gt;-->
+      <!--              &lt;!&ndash;                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>&ndash;&gt;-->
+      <!--              &lt;!&ndash;                  </a>&ndash;&gt;-->
+      <!--              &lt;!&ndash;                </div>&ndash;&gt;-->
+      <!--              &lt;!&ndash;                <div class="card-body">&ndash;&gt;-->
+      <!--              &lt;!&ndash;                  <h5 class="card-title">Category title</h5>&ndash;&gt;-->
+      <!--              &lt;!&ndash;                </div>&ndash;&gt;-->
+      <!--              &lt;!&ndash;              </div>&ndash;&gt;-->
 
 
-            </div>
-          </ng-template>
-        </ng-container>
-      </owl-carousel-o>
+      <!--            </div>-->
+      <!--          </ng-template>-->
+      <!--        </ng-container>-->
+      <!--      </owl-carousel-o>-->
+
+      <app-global-carousel [products]="products" [isCategory]="isCategory"></app-global-carousel>
 
     </div>
   </div>
