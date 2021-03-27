@@ -18,6 +18,7 @@ import {Product} from '../../../../models/product';
 export class FashionCategoryCarouselComponent implements OnInit {
 
   public products: Product[] = [];
+  public viewItems: number = 5;
 
   public categories: Category[] = [
     {
@@ -58,7 +59,7 @@ export class FashionCategoryCarouselComponent implements OnInit {
     },
   ];
 
-  public isCategory: boolean = true;
+  public showBody: boolean = true;
 
   public images: Image[] = [
     {

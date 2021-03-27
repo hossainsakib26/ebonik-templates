@@ -13,7 +13,7 @@ import {Product} from '../../../models/product';
 export class SingleCardComponent implements OnInit {
 
   @Input() product: Product = new Product();
-  @Input() isCategory: boolean = false;
+  @Input() showBody: boolean = false;
 
   constructor() {
   }

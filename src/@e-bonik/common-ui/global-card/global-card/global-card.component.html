@@ -26,8 +26,8 @@
 <!--  </div>-->
 
 
-  <ng-container *ngFor="let product of products">
-    <app-single-card [product]="product" [isCategory]="isCategory"></app-single-card>
-  </ng-container>
+  <div *ngFor="let product of products">
+    <app-single-card [product]="product" [showBody]="showBody"></app-single-card>
+  </div>
 
 </div>

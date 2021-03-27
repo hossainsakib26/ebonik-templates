@@ -15,8 +15,7 @@ export class GlobalCardComponent implements OnInit {
 
   @Input() products: Product[] = [];
   @Input() Categories: Category[] = [];
-
-  @Input() isCategory: boolean = false;
+  @Input() showBody: boolean = false;
 
   constructor() {
 

@@ -1,20 +1,14 @@
 <div class="container pb-5">
   <h3 class="d-flex justify-content-center">New Arrivals</h3>
 
-  <div class="col-12">
-    <owl-carousel-o [options]="customOptions" #owlCat>
+  <!--  <div class="col-12">-->
+<!--  <app-global-carousel [products]="products" [isCategory]="false"></app-global-carousel>-->
+  <!--  </div>-->
 
-      <ng-container>
-        <ng-template carouselSlide [width]="300">
-          <div class="p-3">
-
-            <!--            <app-single-card [product]="product" [isCategory]="false"></app-single-card>-->
-            <app-global-card [products]="products" [isCategory]="false"></app-global-card>
-
-          </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
+  <div class="row">
+    <div class="col-12">
+      <app-global-carousel [products]="products" [showBody]="false" [viewItems]="viewItems"></app-global-carousel>
+    </div>
   </div>
 
 </div>

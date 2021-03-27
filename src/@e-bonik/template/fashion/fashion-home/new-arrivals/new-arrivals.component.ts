@@ -16,6 +16,12 @@ export class NewArrivalsComponent implements OnInit {
     {id: 3, name: 'Rainy Jackate', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel3.jpg', categoryName: 'Suti'},
     {id: 4, name: 'Summer Casual', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel4.jpg', categoryName: 'Hotr'},
     {id: 5, name: 'Formal Tie', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel5.jpg', categoryName: 'Formal'},
+    {id: 6, name: 'Rainy Jackate', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel3.jpg', categoryName: 'Suti'},
+    {id: 7, name: 'Summer Casual', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel4.jpg', categoryName: 'Hotr'},
+    {id: 8, name: 'Formal Tie', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel5.jpg', categoryName: 'Formal'},
+    {id: 9, name: 'Rainy Jackate', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel3.jpg', categoryName: 'Suti'},
+    {id: 10, name: 'Summer Casual', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel4.jpg', categoryName: 'Hotr'},
+    {id: 11, name: 'Formal Tie', price: 200, imgUrl: 'assets/cat-carousel/cat-carousel5.jpg', categoryName: 'Formal'},
   ];
 
   public images: Image[] = [
@@ -29,9 +35,9 @@ export class NewArrivalsComponent implements OnInit {
   public customOptions: OwlOptions = {
     autoWidth: true,
     loop: true,
-    items: 4,
+    items: 8,
     // margin: 5,
-    // slideBy: 'page',
+    slideBy: 'page',
     merge: true,
     autoplay: true,
     autoplayTimeout: 5000,
@@ -60,12 +66,14 @@ export class NewArrivalsComponent implements OnInit {
         items: 2
       },
       900: {
-        items: 3
+        items: 4
       }
     },
     stagePadding: 40,
     // nav: true
   };
+
+  public viewItems: number = 6;
 
   constructor() { }
 

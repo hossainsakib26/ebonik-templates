@@ -17,12 +17,18 @@ export class GlobalCarouselComponent implements OnInit {
   @Input() product: Product = new Product();
   @Input() products: Product[];
   @Input() Categories: Category[];
-  @Input() isCategory: boolean = false;
+  @Input() showBody: boolean = false;
+
+  // for product view by screen size
+  @Input() largeScreenItemQty: number = 6;
+  @Input() midScreenItemQty: number = 4;
+
+  @Input() viewItems: number = 0;
 
   public customOptions: OwlOptions = {
     autoWidth: true,
     loop: true,
-    items: 4,
+    items: this.viewItems,
     // margin: 5,
     slideBy: 'page',
     // merge: true,
@@ -49,11 +55,14 @@ export class GlobalCarouselComponent implements OnInit {
       0: {
         items: 1
       },
-      600: {
+      360: {
         items: 2
       },
-      900: {
-        items: 3
+      480: {
+        items: this.midScreenItemQty
+      },
+      768: {
+        items: this.largeScreenItemQty
       }
     },
     stagePadding: 40,
