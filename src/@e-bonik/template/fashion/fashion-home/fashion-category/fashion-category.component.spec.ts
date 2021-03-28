@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FashionCategoryCarouselComponent } from './fashion-category-carousel.component';
+import { FashionCategoryComponent } from './fashion-category.component';
 
 describe('FashionCategoryCarouselComponent', () => {
-  let component: FashionCategoryCarouselComponent;
-  let fixture: ComponentFixture<FashionCategoryCarouselComponent>;
+  let component: FashionCategoryComponent;
+  let fixture: ComponentFixture<FashionCategoryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FashionCategoryCarouselComponent ]
+      declarations: [ FashionCategoryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FashionCategoryCarouselComponent);
+    fixture = TestBed.createComponent(FashionCategoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

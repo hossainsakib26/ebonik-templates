@@ -20,7 +20,7 @@ export class GlobalCarouselComponent implements OnInit {
   @Input() showBody: boolean = false;
 
   // for product view by screen size
-  @Input() largeScreenItemQty: number = 6;
+  @Input() largeScreenItemQty: number = 5;
   @Input() midScreenItemQty: number = 4;
 
   @Input() viewItems: number = 0;
@@ -50,6 +50,7 @@ export class GlobalCarouselComponent implements OnInit {
     // rewind: true,
     // rtl: true,
     startPosition: 1,
+    // nav: true,
     // navText: [ '<i class=bi bi-caret-left></i>', '<i class=bi bi-caret-right></i>' ],
     responsive: {
       0: {
@@ -66,7 +67,6 @@ export class GlobalCarouselComponent implements OnInit {
       }
     },
     stagePadding: 40,
-    // nav: true
   };
 
   constructor() {
@@ -76,6 +76,14 @@ export class GlobalCarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  private returnItemQty(qty: number): number {
+    if (qty !== 0) {
+      qty = 0;
+      return qty = this.viewItems;
+    }
+    return qty;
   }
 
 }

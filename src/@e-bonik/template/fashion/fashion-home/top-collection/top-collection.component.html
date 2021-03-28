@@ -2,37 +2,9 @@
   <h3 class="d-flex justify-content-center">Top Collections</h3>
 
   <div class="col-12">
-    <owl-carousel-o [options]="customOptions" #owlCat>
-      <ng-container *ngFor="let image of images">
-        <ng-template carouselSlide [width]="image.width">
-          <div class="p-3">
 
-            <div class="card border">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img [src]="image.imgSrc" height="350" width="200"/>
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                </a>
-              </div>
-              <div class="card-body p-1">
-                <div class="d-flex justify-content-between">
-                  <div class="col-8">
-                    <h5>Product Name</h5>
-                    <h6>200$</h6>
-                  </div>
-                  <div class="col-2">
-                    <i class="bi bi-heart"></i>
-                    <!--                    <i class="fab fa-gratipay"></i>-->
-                  </div>
-                </div>
-              </div>
-            </div>
+    <app-global-carousel [products]="products" [showBody]="true" [viewItems]="viewItems"></app-global-carousel>
 
-
-          </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
   </div>
 
 </div>

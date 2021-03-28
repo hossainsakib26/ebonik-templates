@@ -1,0 +1,14 @@
+a{
+  text-decoration: none;
+}
+
+img-animation{
+  transition: all 0.3s!important;
+  transform: scale(0.95)!important;
+  opacity: 0.8!important;
+}
+.img-animation:hover{
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 1;
+}
