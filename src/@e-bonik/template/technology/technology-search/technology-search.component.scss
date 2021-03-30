@@ -42,3 +42,7 @@
 .overflow-hidden {
   cursor: pointer;
 }
+
+.dropdown-toggle::after{
+  content: unset;
+}
