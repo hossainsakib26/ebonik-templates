@@ -7,10 +7,11 @@ import { TechnologyTopBarComponent } from './technology-top-bar/technology-top-b
 import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 import { TechnologySearchBarComponent } from './technology-search-bar/technology-search-bar.component';
 import {TechnologyModule} from '../technology.module';
+import { TechnologyMenubarComponent } from './technology-menubar/technology-menubar.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, TechnologyTopBarComponent, TechnologySearchBarComponent],
+  declarations: [HomeComponent, TechnologyTopBarComponent, TechnologySearchBarComponent, TechnologyMenubarComponent],
   imports: [
     CommonModule,
     TechnologyHomeRoutingModule,

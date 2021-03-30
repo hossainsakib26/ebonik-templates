@@ -1,0 +1,7 @@
+.cursor-change {
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  content: unset;
+}
