@@ -4,10 +4,9 @@ import {FashionHomeResolver} from './fashion-home/fashion-home.resolver';
 import {HomeComponent} from './fashion-home/home/home.component';
 
 const routes: Routes = [
-  // {path: '', component: HomeComponent}
   {
     path: '', loadChildren: () => import('../fashion/fashion-home/fashion-home.module').then(m => m.FashionHomeModule),
-    // resolve: {path: FashionHomeResolver}
+    resolve: {path: FashionHomeResolver}
   }
 ];
 

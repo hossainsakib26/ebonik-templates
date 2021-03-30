@@ -1,0 +1,44 @@
+.input-group {
+}
+
+.dropdown-field {
+  padding: 5px;
+  background-color: darkgray;
+  border-bottom-left-radius: 1000px;
+  border-top-left-radius: 1000px;
+}
+
+.search-field {
+  position: relative;
+  z-index: 1;
+  border-start-end-radius: 1000px !important;
+  border-end-end-radius: 1000px !important;
+}
+
+.search-span {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 2px;
+  padding: 4.5px 9px 4.5px 9px;
+  left: 93%;
+  color: black;
+  opacity: 0.9;
+  transition: all 0.3s;
+  transform: scale(0.95);
+}
+
+.search-span:hover {
+  background-color: darkgray;
+  color: white;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.left-rounded {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.overflow-hidden {
+  cursor: pointer;
+}
