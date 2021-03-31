@@ -1,0 +1,15 @@
+<owl-carousel-o [options]="customOptions">
+  <ng-container *ngFor="let model of modelDatas">
+    <ng-template carouselSlide>
+      <div class="">
+        <div class="parent-view">
+          <img src="{{model.imageUrl}}" class="my-carousel-image-size" alt="{{model.name}}" title="{{model.name}}">
+          <span class="model-name">{{model.name}}</span>
+          <span class="model-details">{{model.shortDetails}}</span>
+          <span class="model-price">${{model.price}}</span>
+          <button class="btn btn-secondary carousel-btn">Shop Now</button>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

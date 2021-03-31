@@ -1,0 +1,47 @@
+.parent-view {
+  position: relative;
+
+  .model-name {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #22aaff;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.90;
+  }
+
+  .model-details {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    color: #179686;
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+
+  .model-price {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: #d70b43;
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1000px;
+  }
+
+
+}
+
+.my-carousel-image-size {
+  width: auto;
+  height: 600px;
+}

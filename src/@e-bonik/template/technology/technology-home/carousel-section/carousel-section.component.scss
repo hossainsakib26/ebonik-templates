@@ -1,0 +1,41 @@
+.product-info-with-image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.product-info {
+  position: absolute;
+  z-index: 1000;
+  top: 20%;
+  left: 10%;
+  color: blue;
+}
+
+.text-blue{
+  color: blue;
+}
+
+.text-red{
+  color: red;
+}
+
+.product-blur {
+  .for-blur {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a528670;
+    color: #000000;
+  }
+  .my-button{
+    position: absolute;
+    z-index: 100;
+    border-radius: 1000px;
+    top: 45%;
+    left: 40%;
+  }
+}
