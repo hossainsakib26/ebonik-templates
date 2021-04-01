@@ -7,5 +7,5 @@ export class Product {
   price: number = 0;
   categoryId?: number = 0;
   categoryName?: string = '';
-
+  productTypeName?: string = '';
 }

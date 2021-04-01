@@ -1,0 +1,41 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" (navChange)="onNavChange($event)" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>Featured</a>
+    <ng-template ngbNavContent>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12" *ngFor="let product of datas">
+          <app-single-card [showBody]="true"  [product]="product"></app-single-card>
+        </div>
+      </div>
+
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>Special</a>
+    <ng-template ngbNavContent>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12" *ngFor="let product of datas">
+          <app-single-card [showBody]="true"  [product]="product"></app-single-card>
+        </div>
+      </div>
+
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>Onsale</a>
+    <ng-template ngbNavContent>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12" *ngFor="let product of datas">
+          <app-single-card [showBody]="true" [product]="product"></app-single-card>
+        </div>
+      </div>
+
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+<!--<pre>Active: {{ active }}</pre>-->

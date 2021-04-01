@@ -3,5 +3,7 @@ export class ProductShortInfo {
   name: string = '';
   imageUrl: string = '';
   price: number = 0;
-  shortDetails: string = '';
+  shortDetails?: string = '';
+  categoryName?: string = '';
+  productTypeName?: string = '';
 }

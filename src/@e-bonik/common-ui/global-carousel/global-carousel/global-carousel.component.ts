@@ -23,7 +23,7 @@ export class GlobalCarouselComponent implements OnInit {
   @Input() largeScreenItemQty: number = 5;
   @Input() midScreenItemQty: number = 4;
 
-  @Input() viewItems: number = 0;
+  @Input() viewItems: number = 4;
 
   public customOptions: OwlOptions = {
     autoWidth: true,
